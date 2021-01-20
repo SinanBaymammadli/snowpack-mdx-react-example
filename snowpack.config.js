@@ -11,20 +11,7 @@ module.exports = {
     "@snowpack/plugin-typescript",
     "snowpack-plugin-mdx",
   ],
-  install: ["react/jsx-runtime"],
-  installOptions: {
-    /* ... */
-  },
-  devOptions: {
-    /* ... */
-  },
-  buildOptions: {
-    /* ... */
-  },
-  proxy: {
-    /* ... */
-  },
-  alias: {
-    /* ... */
-  },
+  packageOptions: {
+    knownEntrypoints: ['react/jsx-runtime']
+  }
 };
